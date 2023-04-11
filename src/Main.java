@@ -30,7 +30,7 @@ public class Main {
         for (int i = 0; i < linhas; i++) {
             for (int j = 0; j < colunas; j++) {
                 if (matriz[i][j] == 1) {
-                    if (i + 2 < linhas && j + 2 < colunas) {
+                    if (i + 2 < linhas && j + 1 < colunas) {
                         if (matriz[i][j + 1] == 1 && matriz[i + 1][j] == 1 && matriz[i + 1][j + 1] == 0 && matriz[i + 2][j] == 0 && matriz[i + 2][j + 1] == 1) {
                             contador++;
                         }
